@@ -6,7 +6,7 @@
   <title>readHD — Claim 3 Months Free Premium (ADHD & Focus Reader)</title>
   
   <!-- Meta & OpenGraph -->
-  <meta name="description" content="Exclusive Giveaway: Get 3 Months of readHD Premium for Free ($19.99 Value). Experience distraction-free reading, RSVP speed presentation, and autopaced audio-visual focus.">
+  <meta name="description" content="Exclusive Giveaway: Get 3 Months of readHD Premium for Free ($19.99 Value). Utilitarian, distraction-free reading, RSVP speed presentation, and autopaced audio-visual focus.">
   <meta property="og:title" content="readHD — 3 Months Free Premium Giveaway">
   <meta property="og:description" content="Transform dense books into calm focus channels. Claim your 3-month free promotional pass for iOS & Android.">
   <meta property="og:image" content="assets/logo_app.png">
@@ -23,15 +23,11 @@
 </head>
 <body>
 
-  <!-- Ambient Decorative Focus Glows -->
-  <div class="bg-glow top-glow"></div>
-  <div class="bg-glow bottom-glow"></div>
-
   <main class="page-container">
     
     <!-- Top Brand Header -->
     <header class="app-header">
-      <div class="brand-pill">
+      <div class="brand-bar">
         <img src="assets/logo_app.png" alt="readHD Logo" class="brand-logo">
         <div class="brand-text">
           <span class="brand-name">read<span class="brand-accent">HD</span></span>
@@ -39,7 +35,7 @@
         </div>
       </div>
       <div class="status-chip">
-        <span class="pulse-dot"></span>
+        <span class="pulse-square"></span>
         <span id="header-counter">Checking available codes...</span>
       </div>
     </header>
@@ -64,7 +60,7 @@
     <section class="claim-card-wrapper">
       <div class="claim-card">
         
-        <!-- Platform Switcher Tabs -->
+        <!-- Platform Switcher Tabs (Sharp Rectangles) -->
         <div class="platform-tabs" role="tablist">
           <button class="tab-btn active" id="tab-ios" role="tab" aria-selected="true" onclick="selectPlatform('ios')">
             <svg class="tab-icon" viewBox="0 0 24 24" fill="currentColor">
@@ -86,12 +82,12 @@
           <div class="code-box-header">
             <span class="code-label" id="code-platform-label">Your 3-Month iOS Pass</span>
             <span class="code-status-indicator" id="code-status-badge">
-              <span class="badge-dot"></span>
+              <span class="badge-square"></span>
               <span id="badge-text">Available to Claim</span>
             </span>
           </div>
 
-          <!-- Code Display Box -->
+          <!-- Code Display Box (Sharp Box) -->
           <div class="code-display" id="code-display">
             <div class="code-loader" id="code-loader" style="display: none;">
               <div class="spinner"></div>
@@ -100,7 +96,7 @@
             <span class="code-text" id="promo-code-text">••••••••••••••••••</span>
           </div>
 
-          <!-- Action Buttons Row -->
+          <!-- Action Buttons Row (Sharp Rectangular Controls) -->
           <div class="action-buttons-grid">
             <button class="btn btn-primary" id="btn-redeem" onclick="handleClaimAndRedeem()">
               <span class="btn-icon">🚀</span>
