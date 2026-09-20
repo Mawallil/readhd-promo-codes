@@ -23,7 +23,7 @@
 </head>
 <body>
 
-  <!-- Background Decorative Focus Glows -->
+  <!-- Ambient Decorative Focus Glows -->
   <div class="bg-glow top-glow"></div>
   <div class="bg-glow bottom-glow"></div>
 
@@ -40,7 +40,7 @@
       </div>
       <div class="status-chip">
         <span class="pulse-dot"></span>
-        <span>Limited Promotion</span>
+        <span id="header-counter">Checking available codes...</span>
       </div>
     </header>
 
@@ -91,29 +91,29 @@
             </span>
           </div>
 
-          <!-- Code Display / Loading Skeleton -->
+          <!-- Code Display Box -->
           <div class="code-display" id="code-display">
-            <div class="code-loader" id="code-loader">
+            <div class="code-loader" id="code-loader" style="display: none;">
               <div class="spinner"></div>
-              <span>Fetching fresh promotional code...</span>
+              <span>Securing your unique promo pass...</span>
             </div>
-            <span class="code-text" id="promo-code-text" style="display: none;">--------</span>
+            <span class="code-text" id="promo-code-text">••••••••••••••••••</span>
           </div>
 
           <!-- Action Buttons Row -->
           <div class="action-buttons-grid">
-            <button class="btn btn-primary" id="btn-redeem" onclick="handleRedeemClick()">
+            <button class="btn btn-primary" id="btn-redeem" onclick="handleClaimAndRedeem()">
               <span class="btn-icon">🚀</span>
-              <span id="btn-redeem-text">Redeem on App Store</span>
+              <span id="btn-redeem-text">Claim & Redeem on App Store</span>
             </button>
-            <button class="btn btn-secondary" id="btn-copy" onclick="handleCopyClick()">
+            <button class="btn btn-secondary" id="btn-copy" onclick="handleCopyCurrentCode()">
               <span class="btn-icon" id="copy-icon">📋</span>
               <span id="copy-btn-text">Copy Code</span>
             </button>
           </div>
 
           <div class="claim-notice" id="claim-notice">
-            <span>💡 <strong>1-Click Direct Redeem:</strong> Tapping "Redeem" automatically opens your store app with this code applied. Once redeemed or copied, this code is marked as used so nobody else can take it.</span>
+            <span>💡 <strong>1-Click Direct Redeem:</strong> Tapping "Claim & Redeem" instantly unlocks a unique promo code, copies it to your clipboard, and opens your store app with the offer pre-loaded!</span>
           </div>
         </div>
 
@@ -130,7 +130,7 @@
         <div class="step-card">
           <div class="step-number">01</div>
           <h3 class="step-title">Claim Your Code</h3>
-          <p class="step-desc">Select your device (Apple or Android) above and tap <strong>"Redeem"</strong> or <strong>"Copy Code"</strong>.</p>
+          <p class="step-desc">Select your device (Apple or Android) above and tap <strong>"Claim & Redeem"</strong> to reserve your unique 3-month code.</p>
         </div>
 
         <div class="step-card">
@@ -142,7 +142,7 @@
         <div class="step-card">
           <div class="step-number">03</div>
           <h3 class="step-title">Enjoy readHD</h3>
-          <p class="step-desc">Open the readHD app on your phone or tablet. All premium focus features and unlimited uploads will unlock instantly!</p>
+          <p class="step-desc">Open the readHD app on your phone or tablet. All premium focus features and unlimited uploads unlock instantly!</p>
         </div>
       </div>
     </section>
